@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tV_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tV_namauser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Nama User"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/iV_profilepic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82"
+        tools:layout_editor_absoluteX="133dp" />
+
+    <TextView
+        android:id="@+id/tV_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:text="Weight"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <TextView
+        android:id="@+id/tV_IBM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="IBM"
+        app:layout_constraintBottom_toTopOf="@+id/bt_logout"
+        app:layout_constraintEnd_toStartOf="@+id/tV_distance"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/tV_weight"
+        app:layout_constraintTop_toBottomOf="@+id/iV_profilepic"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <TextView
+        android:id="@+id/tV_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="56dp"
+        android:text="Distance"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <ImageView
+        android:id="@+id/iV_profilepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/user"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <ImageButton
+        android:id="@+id/iB_changepic"
+        android:layout_width="38dp"
+        android:layout_height="39dp"
+        app:srcCompat="@drawable/plus"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <Button
+        android:id="@+id/bt_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
